@@ -1,4 +1,4 @@
-# Project 3
+# Project 2
 
 See the course site for the project's requirements.
 

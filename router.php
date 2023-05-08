@@ -11,18 +11,17 @@ function check_php_version()
 function config_php_errors()
 {
   // error reporting the same for all students
-  //ini_set('error_log', NULL); // display errors in PHP console
-  ini_set('log_errors', True); // log errors so we can see them
-  ini_set('display_startup_errors', 1); // show errors about PHP starting up
-  ini_set('display_errors', 0); // Do not display errors in the HTTP response; show errors in PHP console
-
-  // report all errors except notices.
+  ini_set('error_log', 'NULL');
+  ini_set('log_errors', true);
+  ini_set('display_startup_errors', 1);
+  ini_set('display_errors', 0);
   error_reporting(E_ALL & ~E_NOTICE);
 }
 
 function default_php_settings()
 {
-  ini_set('short_open_tag', 'Off'); // No short tags
+  // No short tags
+  ini_set('short_open_tag', 'Off');
 }
 
 // check current php version to ensure it meets 2300's requirements
@@ -51,16 +50,8 @@ error_log('routing: ' . $request_uri);
 if (preg_match('/^\/public\//', $request_uri)) {
   // serve the requested resource as-is.
   return False;
-} else if (match_routes($request_uri, ['/', '/home'])) {
+} else if (match_routes($request_uri, '/')) {
   require 'pages/home.php';
-} else if (match_routes($request_uri, '/catalog')) {
-  require 'pages/catalog.php';
-} else if (match_routes($request_uri, '/add-works')) {
-  require 'pages/add_works.php';
-} else if (match_routes($request_uri, '/login')) {
-  require 'pages/login.php';
-} else if (match_routes($request_uri, '/catalog/art-page')) {
-  require 'pages/art_page.php';
 } else {
   error_log("404 Not Found: " . $request_uri);
   http_response_code(404);

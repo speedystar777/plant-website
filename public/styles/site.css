@@ -1,57 +1,372 @@
-html {
-    height: 100%;
-}
 body {
     margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 .hidden {
     display: none;
 }
+
 .center {
     margin: auto;
-    text-align: center;
 }
+
+/* <!-- Source: (original work) Preeti Uppuluri --> */
 header {
-    color: #ffffff;
-    padding: 5px 20px 5px 25px;
-    background: black;
-    background-size: cover;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-    align-items: center;
-    box-shadow: 0px 0px 2px 0px rgb(80, 80, 80);
-}
-.title {
-    font-weight: 100;
-    margin: 10px 0 10px 0;
-    font-size: 36px;
-}
-nav {
-    text-align: right;
-}
-.here {
-    border-bottom: white solid 2px;
-}
-.nav-link {
     color: white;
-    text-decoration: none;
-    margin: 0px 25px;
-    font-size: 16px;
+    padding: 1px 10px 30px 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/plant_background.jpg');
+    background-size: cover;
 }
+
+.title {
+    margin-top: 100px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+h1{
+    font-size: 80px;
+    margin: 25px 0;
+    font-weight: 900;
+}
+
+.subheading {
+    font-size: 30px;
+    font-weight: 100;
+    font-family: 'Segoe UI';
+}
+
+.small {
+    width: 100px;
+    top: 20px;
+    border: none;
+    height: 5px;
+    background: white;
+    margin-bottom: 25px;
+}
+
 footer {
     padding: 50px 0 65px;
-    border-top: solid 1px rgb(80, 80, 80);
 }
 footer .copyright {
     font-size: 16px;
     text-align: center;
     margin-bottom: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.summary {
+    text-align: center;
+    margin: 30px 5%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
+    font-weight: 350;
+    font-size: 40px;
+}
+.intro {
+    text-align: center;
+    margin:  0 5% 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+.paragraph {
+    margin:  0 5% 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+
+.form-card {
+    margin: 0 5% 60px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px #dedede;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    grid-gap: 10px;
+}
+.confirmation-card {
+    margin: 0 5% 60px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px #dedede;
+    padding: 30px;
+}
+.confirmation {
+    margin:  0 0 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: darkgreen;
+}
+.form {
+    margin: 15px 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.label-group {
+    margin: 0 0 15px;
+}
+label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+}
+.input {
+    width: 75%;
+    margin: 5px 0 0;
+    padding: 5px 0 5px 5px ;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: lightslategray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.feedback {
+    width: 75%;
+    text-align: center;
+    margin: 0 0 15px;
+    border-radius: 5px;
+    background-color: #ffebea;
+    padding: 5px 5px 10px 5px;
+    color: #c2180c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.submit-button {
+    margin: 15px 0 0;
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+}
+.clickable:hover {
+    cursor: pointer;
+}
+.records {
+    text-align: left;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    margin: 0 15px;
+    font-weight: 900;
+    color: #3A230C;
+}
+.image-container {
+    text-align: center;
+    margin: 125px 0px 0px;
+}
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.filters-title {
+    text-align: left;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    margin: 0 5% 1%;
+    font-weight: 900;
+    color: #3A230C;
+}
+.filter-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    padding-inline-start: 10px;
+    margin: 5px 5% 1%;
+    text-align: center;
+}
+.filter-card {
+    padding: 3%;
+    width: 70%;
+    margin: 0 auto;
+    border: solid  darkgreen 1px;
+    position: relative;
+}
+.filter {
+    text-align: left;
+    margin: 1% 0 5% 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 100;
 }
-.footer-email {
-    color: lightblue;
+.filter-name{
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    margin: 0 5%;
+    font-weight: 600;
+    color: #3A230C;
+}
+.filter-button {
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+}
+.divider{
+    width: 90%;
+    margin: 25px auto;
+    width: 90%;
+    top: 20px;
+    border: none;
+    height: 1px;
+    background: #d4d4d4;
+}
+.search-section {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 60px;
+    margin-right: 5%;
+}
+.search-bar {
+    display: inline-flex;
+    float: right;
+}
+.search-bar label {
+    padding-right: 10px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.search-bar input {
+    width: 250px;
+    margin-right: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid;
+    font-size: 14px;
+}
+.search-bar button {
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+.database {
+    margin-bottom: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+table {
+    border-spacing: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-top: 2px solid #3A230C;
+    border-bottom: 2px solid #3A230C;
+    color: #3A230C;
+    width: 100%;
+}
+
+table tr {
+    /* default table background color */
+    background-color: #ffffff;
+}
+table tr:nth-child(even) {
+    /* alternate row color */
+    background-color: #E7E7E7;
+}
+  /* table headers */
+table th {
+    text-align: left;
+    font-weight: bold;
+    background-color: #ffffff;
+    border-bottom: 1px solid #3A230C;
+    padding: 10px 5px;
+    position: sticky;
+    top: 0px;
+}
+  /* table cells (not header data) */
+table td {
+    text-align: left;
+    font-weight: normal;
+
+    /* cell border */
+    /* border-bottom: 1px solid #000000; */
+
+    /* spacing between cells */
+    padding: 8px;
+
+    /* spacing between columns */
+    padding-right: 16px;
+}
+  /* remove spacing between columns on last column */
+table td:last-child {
+    padding-right: 5px;
+}
+th.sci-name, th.name, th.min, th.max {
+    width: 15%;
+}
+th.min, th.max {
+    width: 13%;
+}
+th.sun {
+    width: 7%;
+}
+th.water {
+    width: 17%;
+}
+th.safe {
+    width: 9%;
+}
+th.extra {
+    width: 5%;
+    text-align: center;
+}
+th.hum {
+    width: 8%;
+}
+.water-col {
+    text-align: center;
+}
+/*th.sci-name, th.water, th.hum, th.min, th.max {
+    width: 10%;
+}
+th.name, th.water {
+    width: 13%;
+}
+th.sci-name{
+    width: 15%;
+}*/
+
+.error {
+    text-align: center;
+    margin: 30px 5% 2%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 350;
+    font-size: 30px;
+}
+.error-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+.return-home {
+    text-align: center;
+    margin: 40px 5% 4%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;;
+}
+.success:link {
+    text-decoration: none;
+    border: solid 3px;
+    padding: 5px 15px;
+}
+.success{
+    color: darkgreen;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    border: solid 3px;
+    padding: 5px 15px;
+}
+.table-header {
+    text-decoration: none;
+    color: #3A230C;
+}
+
+.sort-both {
+    width: 10%;
+    vertical-align: middle;
 }
