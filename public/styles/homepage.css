@@ -1,0 +1,29 @@
+/* <!-- Source: https://i.pinimg.com/originals/7f/99/ec/7f99ec68714a2271fcc78fbc46466132.jpg--> */
+.home-page {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/coverimage.jpg");
+}
+.description {
+  color: white;
+  margin: 60px 0 25px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 100;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.gallery-button {
+  text-align: center;
+  margin: 60px 0 15px;
+}
+.gbutton {
+  background-color: transparent;
+  color: #66fcf1;
+  padding: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: #66fcf1 solid 2px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+.gbutton:hover {
+  cursor: pointer;
+}

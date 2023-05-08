@@ -1,0 +1,120 @@
+.login-page {
+  background: #0b0c10;
+  height: 100%;
+}
+.form-card {
+  margin: 3% auto;
+  width: 40%;
+  padding: 30px;
+  background: #1f2833;
+  color: white;
+}
+.form {
+  margin: 15px 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.label-group {
+  margin: 0 0 15px;
+}
+label {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+}
+.input {
+  width: 100%;
+  margin: 5px 0 0;
+  padding: 5px 0 5px 5px;
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: #0b0c10;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  background-color: #0b0c10;
+}
+.feedback {
+  width: 100%;
+  text-align: center;
+  margin: 0 0 15px;
+  border-radius: 5px;
+  background-color: #66fcf1;
+  padding: 5px 5px 10px 5px;
+  color: #0b0c10;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.submit-button {
+  margin: 15px 0 0;
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  border: none;
+  background-color: #45a29e;
+}
+.clickable:hover {
+  cursor: pointer;
+}
+.records {
+  text-align: left;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  margin: 0 15px;
+  font-weight: 900;
+  color: #e3e6e6;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.notice {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  margin: 10px 0 0 0;
+}
+hr {
+  margin: 0;
+  background: black;
+  border: none;
+}
+.description {
+  color: white;
+  margin: 25px 0 25px;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 100;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.sub-text {
+  color: white;
+  margin: 25px 0 50px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 100;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.border {
+  margin: 5% 10%;
+  border: #3700b3 solid 2px;
+  text-align: center;
+  padding: 0;
+}
+.border2 {
+  margin: 3%;
+  border: #66fcf1 solid 2px;
+  text-align: center;
+  padding: 5%;
+}
+.gbutton {
+  background-color: transparent;
+  color: #66fcf1;
+  padding: 10px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: #66fcf1 solid 2px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+.gbutton:hover {
+  cursor: pointer;
+}
