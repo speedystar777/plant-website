@@ -1,7 +1,3 @@
-# Project 2
+# Plant Finder Website
 
-See the course site for the project's requirements.
-
-# Submission Instructions
-
-Stage, commit, and push your changed files. Then complete the submission form: <https://cornell.ca1.qualtrics.com/jfe/form/SV_ekRwrDA4MccYt0O>
+Welcome to the plant finder website! Download the repository and run `router -S localhost:8000 router.php`
